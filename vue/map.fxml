@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+
+<BorderPane fx:id="borderpane" maxHeight="544.0" maxWidth="512.0" minHeight="544.0" minWidth="512.0" prefHeight="544.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.controller.Taskmaster">
+	<center>
+		<Pane>
+			<children>
+				<TilePane fx:id="tilePaneFX" prefColumns="30" prefRows="30" />
+				<Pane prefHeight="-Infinity" prefWidth="-Infinity">
+					<children>
+						<ImageView fx:id="reynaldpnjview" cache="false" fitHeight="50.0" fitWidth="50.0" mouseTransparent="false" pickOnBounds="true" preserveRatio="true" />
+						<ImageView fx:id="dirtbossview" cache="false" fitHeight="100.0" fitWidth="100.0" layoutX="337.0" layoutY="200.0" mouseTransparent="false" pickOnBounds="true" preserveRatio="true" />
+
+						<ImageView fx:id="icebossview" cache="false" fitHeight="100.0" fitWidth="100.0" layoutX="320.0" layoutY="148.0" mouseTransparent="false" pickOnBounds="true" preserveRatio="true" />
+						<ImageView fx:id="firebossview" cache="false" fitHeight="100.0" fitWidth="100.0" layoutX="337.0" layoutY="272.0" mouseTransparent="false" pickOnBounds="true" preserveRatio="true" />
+						<ImageView fx:id="bokoblin" cache="false" fitHeight="32.0" fitWidth="32.0" layoutX="284.0" layoutY="340.0" mouseTransparent="false" onKeyPressed="#movement" pickOnBounds="true" preserveRatio="true" />
+						<ImageView fx:id="player" cache="false" fitHeight="32.0" fitWidth="32.0" layoutX="284.0" layoutY="340.0" mouseTransparent="false" onKeyPressed="#movement" pickOnBounds="true" preserveRatio="true" />
+					</children>
+				</Pane>
+				<HBox fx:id="heart" layoutX="-53.0" layoutY="15.0" prefHeight="100.0" prefWidth="200.0">
+					<children>
+						<ImageView fx:id="heartview" cache="false" fitHeight="81.0" fitWidth="204.0" mouseTransparent="false" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER" />
+					</children>
+				</HBox>
+            <DialogPane fx:id="dialoguereynald" layoutX="76.0" layoutY="409.0" onKeyPressed="#changementdialogue" />
+			</children>
+		</Pane>
+	</center>
+</BorderPane>
